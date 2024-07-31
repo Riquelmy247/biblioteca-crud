@@ -1,0 +1,18 @@
+jwt:
+  secret: ${JWT_SECRET:S3CR3T1098532473S3CR3T81235192S3CR3TS3CR3TS3CR3T712531293012321A163JBV6S3CR3TS3C3CR3TTS3CR3TS3CR3T71}
+
+soldance:
+  user-admin:
+    name: ${USER_ADMIN:admin}
+    password: ${USER_ADMIN_PASSWORD:12345}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: ${MYSQL_PASS:Th14g0S0l3xt3rn0SSSSGSS}
+    url: jdbc:mysql://${MYSQL_HOST:mysql.thiagosol.com}:3306/biblioteca
+    username: ${MYSQL_USER:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
