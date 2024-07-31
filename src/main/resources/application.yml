@@ -1,0 +1,18 @@
+jwt:
+  secret: ${JWT_SECRET:}
+
+soldance:
+  user-admin:
+    name: ${USER_ADMIN:}
+    password: ${USER_ADMIN_PASSWORD:}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: ${MYSQL_PASS:}
+    url: jdbc:mysql://${MYSQL_HOST:}:3306/
+    username: ${MYSQL_USER:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
